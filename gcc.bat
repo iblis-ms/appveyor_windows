@@ -4,6 +4,7 @@ SET "CXX=C:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\g++.exe"
 
 ECHO CC=%CC%
 ECHO CXX=%CXX%
+ECHO %PATH%
 
 MKDIR "output_gcc"
 CD "output_gcc"
