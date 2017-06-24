@@ -6,6 +6,8 @@ ECHO CC=%CC%
 ECHO CXX=%CXX%
 ECHO %PATH%
 
+IF EXIST "output_gcc" rd /q /s "output_gcc"
+
 MKDIR "output_gcc"
 CD "output_gcc"
 cmake -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Release ..\code 

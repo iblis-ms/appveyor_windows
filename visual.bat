@@ -4,6 +4,8 @@ SET "CXX=cl.exe"
 
 ECHO "VISUAL_STUDIO_YEAR=%VISUAL_STUDIO_YEAR% VISUAL_STUDIO_VERSION=%VISUAL_STUDIO_VERSION%"
 
+IF EXIST "output_visual" rd /q /s "output_visual"
+
 MKDIR "output_visual"
 CD "output_visual"
 cmake -G "Visual Studio %VISUAL_STUDIO_VERSION% %VISUAL_STUDIO_YEAR% Win64" -DCMAKE_BUILD_TYPE=Release ..\code 
