@@ -8,6 +8,9 @@ ECHO %PATH%
 
 IF EXIST "output_gcc" rd /q /s "output_gcc"
 
+IF EXIST %CXX% ECHO "CXX EXISTS"
+IF EXIST %CC% ECHO "CC EXISTS"
+
 MKDIR "output_gcc"
 CD "output_gcc"
 cmake -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Release ..\code 
