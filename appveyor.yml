@@ -17,4 +17,5 @@ install:
 
 test_script:
     - gcc.bat
+    - gcc.bat
     - visual.bat
