@@ -1,4 +1,5 @@
 
+SET "PATH=C:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin;C:\Program Files (x86)\CMake\bin"
 SET "CC=cl.exe"
 SET "CXX=cl.exe"
 

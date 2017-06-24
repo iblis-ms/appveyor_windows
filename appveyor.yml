@@ -1,8 +1,17 @@
 image:
 - Visual Studio 2015
 
-
+environment:
+  VISUAL_STUDIO_YEAR: 2015
+  VISUAL_STUDIO_VERSION: 14
+  
+install:
+  - call "C:\Program Files\Microsoft SDKs\Windows\v7.1\Bin\SetEnv.cmd" /x64
+  - call "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat" x86_amd64
+  - where cl
+  
 build: off
 
 test_script:
     - gcc.bat
+    - visual.bat
