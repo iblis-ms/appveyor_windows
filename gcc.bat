@@ -1,6 +1,7 @@
 
 SET "CC=C:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\gcc.exe"
 SET "CXX=C:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin\g++.exe"
+SET "PATH=C:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin;%PATH%"
 
 ECHO CC=%CC%
 ECHO CXX=%CXX%
