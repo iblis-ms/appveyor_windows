@@ -6,7 +6,6 @@ environment:
   VISUAL_STUDIO_VERSION: 14
   
 install:
-  - where cl
   - dir /s SetEnv.cmd
   - dir /s vcvarsall.bat
   - dir "C:\Program Files\Microsoft SDKs\Windows"
