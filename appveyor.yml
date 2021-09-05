@@ -6,12 +6,15 @@ environment:
   VISUAL_STUDIO_VERSION: 14
   
 install:
-  - call "C:\Program Files\Microsoft SDKs\Windows\v7.1\Bin\SetEnv.cmd" /x64
-  - call "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat" x86_amd64
+  - dir "C:\Program Files\Microsoft SDKs\Windows"
+  - dir "C:\Program Files (x86)"
+ # - call "C:\Program Files\Microsoft SDKs\Windows\v7.1\Bin\SetEnv.cmd" /x64
+  #- call "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat" x86_amd64
   - where cl
   
 build: off
 
 test_script:
-    - gcc.bat
-    - visual.bat
+  - echo "test"
+   # - gcc.bat
+   # - visual.bat
